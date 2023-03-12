@@ -43,18 +43,18 @@ gsap.to("#elem1 h1,#elem3 h1", {
 		scroller: "body",
 		scrub: 3,
 		// markers: true,
-		start: "top -5%",
+		start: "top 0%",
 		end: "top -90%",
 	},
 });
 gsap.to("#elem1 h5,#elem3 h5", {
-	x: "15%",
+	x: "55%",
 	scrollTrigger: {
 		trigger: "#elem1 h1",
 		scroller: "body",
 		scrub: 3,
 		// markers: true,
-		start: "top -5%",
+		start: "top 0%",
 		end: "top -90%",
 	},
 });
@@ -70,11 +70,22 @@ gsap.to("#elem2 h1,#elem4 h1", {
 	},
 });
 gsap.to("#elem2 h5,#elem4 h5", {
-	x: "-15%",
+	x: "-55%",
 	scrollTrigger: {
 		trigger: "#elem1 h1",
 		scroller: "body",
 		scrub: 3,
+		// markers: true,
+		start: "top -5%",
+		end: "top -90%",
+	},
+});
+gsap.to("#page1 #bg", {
+	opacity: 0.7,
+	scrollTrigger: {
+		trigger: "#bg",
+		scroller: "body",
+		scrub: 5,
 		// markers: true,
 		start: "top -5%",
 		end: "top -90%",
